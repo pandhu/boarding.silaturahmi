@@ -1,6 +1,13 @@
 body{
-    background: url(../img/background.jpeg);
     overflow: hidden;
+}
+.bg-siang{
+    background: url(../img/backgroun-siang.png);
+    background-size: cover;
+}
+
+.bg-malem{
+    background: url(../img/background.jpeg);
 }
 .text-white{
     color: #fff;

@@ -66,7 +66,7 @@
     }
     </style>
 </head>
-<body style="display:none">
+<body style="display:none" class="bg-siang">
     <div class="flex-center position-ref full-height">
         @if (Route::has('login'))
         <div class="top-right links">
@@ -82,7 +82,7 @@
         <div class="content col-md-12">
             <div class="title m-b-md">
                 <form id="search">
-                    <h2 class="text-white">Masukkan Kode Boarding (Contoh: GA999)</h2>
+                    <h2 class="">Masukkan Kode Boarding (Contoh: GA999)</h2>
                     <div class="form-group col-md-6 col-md-offset-3">
                         <input class="form-control" name="q">
                     </div>
@@ -114,6 +114,8 @@
                     </div>
                 </div>
                 <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-close" data-dismiss="modal">Close</button>
+
                     <button type="button" class="btn btn-primary btn-konfirmasi" data-code="">Konfirmasi</button>
                 </div>
             </div><!-- /.modal-content -->

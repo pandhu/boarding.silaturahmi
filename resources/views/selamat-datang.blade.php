@@ -66,7 +66,7 @@
     }
     </style>
 </head>
-<body style="display:none">
+<body style="display:none" class="bg-malem">
     <div class="flex-center position-ref full-height">
 
     </div>
