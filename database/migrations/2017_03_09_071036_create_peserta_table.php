@@ -19,7 +19,7 @@ class CreatePesertaTable extends Migration
             $table->string('family');
             $table->string('childs');
             $table->datetime('present_date')->nullable();
-            $table->string('code')->unique();
+            $table->string('code');
             $table->rememberToken();
             $table->timestamps();
         });
