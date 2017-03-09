@@ -89,7 +89,7 @@
                 </form>
             </div>
         </div>
-        <img class="roket" src="{{url('img/roket.png')}}">
+        <img class="roket" src="{{url('img/roket-v2.png')}}">
     </div>
     <!-- Large modal -->
 
