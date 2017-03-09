@@ -1,0 +1,12 @@
+body{
+    background: url(../img/background.jpeg);
+    overflow: hidden;
+}
+.text-white{
+    color: #fff;
+}
+.roket{
+    position: absolute;
+    bottom: -80px;
+    right: 30px;
+}

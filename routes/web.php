@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/selamat-datang', function () {
+    return view('selamat-datang');
+});
+Route::get('_search', 'BaseController@_search');
+Route::post('_konfirmasi', 'BaseController@_konfirmasi');
