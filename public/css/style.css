@@ -1,5 +1,17 @@
+@font-face {
+    font-family: JandaManatee;
+    src: url(../fonts/JandaManateeSolid.ttf);
+}
+
 body{
     overflow: hidden;
+}
+
+.text-white{
+    color: #fff;
+}
+.font-janda{
+    font-family: JandaManatee;
 }
 .bg-siang{
     background: url(../img/backgroun-siang.png);
@@ -17,3 +29,16 @@ body{
     bottom: -80px;
     right: 30px;
 }
+
+.content{
+    margin-top:-200px;
+}
+
+.title{
+    margin-top: 100px;
+}
+ .title input{
+     border: 3px solid #555;
+     font-size: 1em;
+     height: auto;
+ }

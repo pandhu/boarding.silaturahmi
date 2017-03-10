@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Boarding | Gathering Afrakids</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -80,11 +80,12 @@
         @endif
 
         <div class="content col-md-12">
+            <h1 class="font-janda">Selamat Datang Di Gathering Afrakids</h1>
             <div class="title m-b-md">
                 <form id="search">
-                    <h2 class="">Masukkan Kode Boarding (Contoh: GA999)</h2>
+                    <h2 class="font-janda">Masukkan Kode Boarding (Contoh: GA999)</h2>
                     <div class="form-group col-md-6 col-md-offset-3">
-                        <input class="form-control" name="q">
+                        <input class="form-control font-janda text-center" name="q">
                     </div>
                 </form>
             </div>
@@ -93,7 +94,7 @@
     </div>
     <!-- Large modal -->
 
-    <div class="modal fade modal-confirm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+    <div class="modal fade modal-confirm font-janda" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -101,16 +102,20 @@
                     <h4 class="modal-title" id="gridSystemModalLabel">Peserta Gathering Afrakids</h4>
                 </div>
                 <div class="modal-body text-center">
-
-                    <h4>Nama</h4>
-                    <h1 id="modal-name"></h1>
-                    <div id="modal-penumpang-section">
-                        <h4>Penumpang Lainnya</h4>
-                        <h2 id="modal-penumpang"></h2>
+                    <div class="content-not-available">
+                        <h1>Data Tidak Ditemukan</h1>
                     </div>
-                    <div id="modal-anak-section">
-                        <h4>Anak-anak</h4>
-                        <h2 id="modal-anak"></h2>
+                    <div class="content-available">
+                        <h4>Nama</h4>
+                        <h1 id="modal-name"></h1>
+                        <div id="modal-penumpang-section">
+                            <h4>Penumpang Lainnya</h4>
+                            <h2 id="modal-penumpang"></h2>
+                        </div>
+                        <div id="modal-anak-section">
+                            <h4>Anak-anak</h4>
+                            <h2 id="modal-anak"></h2>
+                        </div>
                     </div>
                 </div>
                 <div class="modal-footer">

@@ -28,10 +28,13 @@ $("#search").submit(function(e) {
 		data: $("#search").serialize(), // serializes the form's elements.
 	}).done(function(data) {
 		if(data.response == 404){
-			$('.modal-confirm .modal-body').html('<h1>Data Tidak Ditemuan</h1>');
+			$('.content-available').hide();
+			$('.content-not-available').show();
 			$('.modal-confirm .btn-konfirmasi').hide();
 			$('.modal-confirm .btn-close').show();
 		} else {
+			$('.content-available').show();
+			$('.content-not-available').hide();
 			$('.modal-confirm .btn-konfirmasi').show();
 			$('.modal-confirm .btn-close').hide();
 			$('#modal-anak-section').show();

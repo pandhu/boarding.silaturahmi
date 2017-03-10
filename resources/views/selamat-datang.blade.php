@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>Boarding | Gathering Afrakids</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -66,8 +66,19 @@
     }
     </style>
 </head>
-<body style="display:none" class="bg-malem">
+<body style="display:none" class="bg-malem text-white font-janda">
     <div class="flex-center position-ref full-height">
+        <div class="content col-md-12">
+            <div class="m-b-md">
+                <h1 class="">Terima Kasih telah melakukan registrasi</h1>
+                <h3>Kini Anda resmi mengikuti Silaturahmi Afrakids 2017</h3>
+                <h3>Siapkan diri menuju percepatan peningkatan kapasitas diri Anda</h3>
+                <h3>Grow Up Together!</h3>
+
+            </div>
+            <div class="clearfix"></div>
+            <a  href="{{url('')}}" class="btn btn-default">Kembali</a>
+        </div>
 
     </div>
     <!-- Large modal -->
@@ -78,5 +89,16 @@ integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="{{url('js/script.js')}}" type="text/javascript"></script>
+<script  type="text/javascript">
+    setTimeout(fade, 10000); //will call the function after 2 secs.
+
+   function fade(){
+       $("body").fadeOut(1000, redirect);
+   }
+
+   function redirect(){
+       window.location.href = "{{url('/')}}"; //will redirect to your blog page (an ex: blog.html)
+   }
+</script>
 </body>
 </html>
