@@ -53,8 +53,7 @@ class BaseController extends Controller
         return response()->json($data);
     }
 
-
-    public function list(){
+    public function listPeserta(){
         $pesertas = Peserta::all();
         $data = ['pesertas'=>$pesertas];
 
