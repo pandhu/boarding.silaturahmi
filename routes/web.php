@@ -21,3 +21,4 @@ Route::get('_search', 'BaseController@_search');
 Route::post('_cancel', 'BaseController@_cancel');
 Route::post('_konfirmasi', 'BaseController@_konfirmasi');
 Route::get('/list', 'BaseController@listPeserta');
+Route::get('/total-peserta', 'BaseController@totalPeserta');

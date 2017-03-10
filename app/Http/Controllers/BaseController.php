@@ -59,4 +59,16 @@ class BaseController extends Controller
 
         return view('list', $data);
     }
+
+    public function totalPeserta(){
+        $pesertas = Peserta::where('present_date', '<>', null)->get();
+        $countPeserta = count($pesertas);
+        foreach($pesertas as $item){
+            if($item->family != ''){
+                $families = explode(",", $item->family);
+                $countPeserta = $countPeserta + count($families);
+            }
+        }
+        dd($countPeserta);
+    }
 }
