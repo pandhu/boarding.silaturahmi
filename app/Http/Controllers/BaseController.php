@@ -69,6 +69,7 @@ class BaseController extends Controller
                 $countPeserta = $countPeserta + count($families);
             }
         }
-        dd($countPeserta);
+        $data = ['jumlah boarding'=> count($pesertas), 'jumlah peserta'=>$countPeserta];
+        dd($data);
     }
 }
