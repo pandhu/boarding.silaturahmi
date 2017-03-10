@@ -90,7 +90,7 @@ crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="{{url('js/script.js')}}" type="text/javascript"></script>
 <script  type="text/javascript">
-    setTimeout(fade, 10000); //will call the function after 2 secs.
+    setTimeout(fade, 7000); //will call the function after 2 secs.
 
    function fade(){
        $("body").fadeOut(1000, redirect);
