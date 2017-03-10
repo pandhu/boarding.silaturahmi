@@ -18,4 +18,6 @@ Route::get('/selamat-datang', function () {
     return view('selamat-datang');
 });
 Route::get('_search', 'BaseController@_search');
+Route::post('_cancel', 'BaseController@_cancel');
 Route::post('_konfirmasi', 'BaseController@_konfirmasi');
+Route::get('/list', 'BaseController@list');

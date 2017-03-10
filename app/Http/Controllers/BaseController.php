@@ -36,5 +36,28 @@ class BaseController extends Controller
         return response()->json($data);
     }
 
-    
+    public function _cancel(Request $request){
+        $code = $request->input('code');
+        $peserta = Peserta::where('code', $code)->first();
+
+        try{
+            $peserta->present_date = null;
+            $peserta->save();
+            $data = ['response'=>200, 'message'=>"success", 'data'=>$peserta];
+            return response()->json($data);
+        }catch(\Exception $e){
+            $data = ['response'=>404, 'message'=>$e->getMessage(), 'data'=>null];
+            return response()->json($data);
+        }
+        $data = ['response'=>404, 'message'=>$e->getMessage(), 'data'=>null];
+        return response()->json($data);
+    }
+
+
+    public function list(){
+        $pesertas = Peserta::all();
+        $data = ['pesertas'=>$pesertas];
+
+        return view('list', $data);
+    }
 }
